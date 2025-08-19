@@ -1,2 +1,4 @@
 ﻿  main.c
+C:\Users\ericd\projects\Prime-Finder\prime_finder\prime_finder\main.c(23,13): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+C:\Users\ericd\projects\Prime-Finder\prime_finder\prime_finder\main.c(30,38): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
   prime_finder.vcxproj -> C:\Users\ericd\projects\Prime-Finder\prime_finder\x64\Debug\prime_finder.exe

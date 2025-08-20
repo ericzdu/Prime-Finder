@@ -127,7 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="filter.c" />
+    <ClCompile Include="functions.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="math_utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="filter.h" />
+    <ClInclude Include="header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

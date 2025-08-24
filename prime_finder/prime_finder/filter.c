@@ -32,13 +32,11 @@ int find_prime_6x(int x, int* count) {
 	if (x <= 3) {
 		return find_prime(x, count); 
 	}
-
-	int low = find_prime(6 * x - 1, count);
-	int high = find_prime(6 * x + 1, count); 
-
-	//perform these two and then iterate x
-	//6 * x + 1; 
-	//6 * x - 1;
+	 
+	//inverse the function
+	if (((x - 1) % 6 == 0) || ((x + 1) % 6 == 0)) {
+		return find_prime(x, count);
+	}
 
 	return 0; 
 }

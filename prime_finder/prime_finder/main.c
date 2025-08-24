@@ -22,13 +22,19 @@ int main(int argc, char* argv[]) {
 		current_time = time(NULL);
 
 		//initial filtering method, filter odd numbers > 1
-		found = find_prime(++prime, &count);
+		//found = find_prime(++prime, &count); //172117711
+		//if (found) {
+		//	result = found; 
+		//	push_to_linked_list(found, count); 
+		//}
+
+		//second filtering method, filter numbers 6n+1 and 6n-1, where n is positive 
+		found = find_prime_6x(++prime, &count); //167425133
 		if (found) {
-			result = found; 
+			result = found;
 			push_to_linked_list(found, count); 
 		}
 
-		//second filtering method, filter numbers 6n+1 and 6n-1, where n is positive
 
 		if ((int)(current_time - start_time) > i) {
 			i = (int)(current_time - start_time);
@@ -40,7 +46,7 @@ int main(int argc, char* argv[]) {
 			j *= 2;
 		}
 
-	} while (difftime(current_time, start_time) < 1);
+	} while (difftime(current_time, start_time) < 60);
 
 	printf("highest prime found: %d\n", result);
 	printf("number of primes found: %d\n", count);
